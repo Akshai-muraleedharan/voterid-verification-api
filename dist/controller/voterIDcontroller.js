@@ -31,7 +31,7 @@ const getVoterID = (req, res) => __awaiter(void 0, void 0, void 0, function* () 
         const config = {
             method: 'post',
             maxBodyLength: Infinity,
-            url: 'https://api.invincibleocean.com/invincible/searchVoterId',
+            url: process.env.INVINCIBLE_OCEAN_BASE_URL,
             headers: {
                 'Content-Type': 'application/json',
                 'clientId': `${process.env.INVINCIBLE_CLIENT_ID}`,
